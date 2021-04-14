@@ -5,9 +5,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-light-theme-color);
-  margin-right: 90px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
+  // margin-right: 90px;
+  // padding-top: 24px;
+  // padding-bottom: 24px;
 
   animation-duration: 3000ms;
 }
@@ -16,12 +17,12 @@
   color: var(--accent-color);
 }
 
-.page-logo--footer {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 20px;
-  padding: 0;
-}
+// .page-logo--footer {
+//   display: block;
+//   margin-right: 0;
+//   margin-bottom: 20px;
+//   padding: 0;
+// }
 
 .page-logo__logo-text--dark-theme {
   color: var(--third-text-color);
