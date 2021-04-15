@@ -44,29 +44,29 @@
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-                <button type="button" class="page-header__menu">
+                <button type="button" class="page-header__menu" data-menu-button>
                     <svg class="menu-icon" width="40" height="40">
                         <use href="./images/icons3.svg#icon-menu"></use>
                     </svg>
                 </button>
             </div>
-            <div class="mobile-menu">
-                <button class="mobile-menu__btn-close" type="button">
+            <div class="mobile-menu" data-menu>
+                <button class="mobile-menu__btn-close" type="button" data-menu-close>
                     <svg class="mobile-menu__cross-icon" width="19" height="19">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
                 </button>
                 <div class="mobile-menu__nav-list-wrapper">
                     <ul class="mobile-menu__nav-list list">
-                        <li class="mobile-menu__nav-item link">
+                        <li class="mobile-menu__nav-item">
                             <a class="mobile-menu__nav-link link" href="">Студия</a>
                         </li>
 
-                        <li class="mobile-menu__nav-item link">
+                        <li class="mobile-menu__nav-item">
                             <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфолио</a>
                         </li>
 
-                        <li class="mobile-menu__nav-item link">
+                        <li class="mobile-menu__nav-item">
                             <a class="mobile-menu__nav-link link" href="">Контакты</a>
                         </li>
                     </ul>
@@ -107,12 +107,12 @@
 
             <!--Секция Hero-->
             
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="hero__container">
                     <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                     <button class="button" type="button" data-modal-open>Заказать услугу</button>
                 </div>
-            </section> -->
+            </section>
 
             <!--Секция Преимущества-->
 
@@ -537,5 +537,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
