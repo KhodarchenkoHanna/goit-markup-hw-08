@@ -74,12 +74,12 @@
   cursor: pointer;
 }
 
-.mobile-menu__nav-item:first-child {
+.mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 36px;
 }
 
 .mobile-menu__nav-item:last-child {
-  margin-top: 32px;
+  margin-bottom: 302px;
 }
 
 .mobile-menu__nav-link {

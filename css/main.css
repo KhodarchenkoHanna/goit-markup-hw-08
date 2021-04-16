@@ -72,12 +72,14 @@ img {
 
 .about__container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .about__container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -238,12 +240,12 @@ img {
   cursor: pointer;
 }
 
-.mobile-menu__nav-item:first-child {
+.mobile-menu__nav-item:not(:last-child) {
   margin-bottom: 36px;
 }
 
 .mobile-menu__nav-item:last-child {
-  margin-top: 32px;
+  margin-bottom: 302px;
 }
 
 .mobile-menu__nav-link {

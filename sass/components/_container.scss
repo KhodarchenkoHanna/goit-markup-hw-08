@@ -1,11 +1,13 @@
 .about__container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .about__container {
     width: 480px;
+    margin: 0 auto;
   }
 }
 
