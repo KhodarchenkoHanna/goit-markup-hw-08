@@ -175,14 +175,14 @@ img {
 
 .page-header__container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .page-header {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .page-header__navigation-list {
     display: none;
