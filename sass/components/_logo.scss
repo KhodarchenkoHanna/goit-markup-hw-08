@@ -1,20 +1,21 @@
-// .page-logo {
-//   font-family: var(--secondary-font);
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   color: var(--logo-light-theme-color);
-//   margin-right: 90px;
-//   padding-top: 24px;
-//   padding-bottom: 24px;
+.page-logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
 
-//   animation-duration: 3000ms;
-// }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 
-// .page-logo__logo-text--accent-color {
-//   color: var(--accent-color);
-// }
+.page-logo--accent-color {
+  color: var(--accent-color);
+}
 
 // .page-logo--footer {
 //   display: block;
