@@ -124,22 +124,6 @@ img {
   color: var(--accent-color);
 }
 
-.page-header .page-logo {
-  margin-bottom: 16px;
-}
-
-@media screen and (min-width: 768px) {
-  .page-header .page-logo {
-    margin-bottom: 26px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .page-header .page-logo {
-    margin-bottom: 25px;
-  }
-}
-
 .social-list {
   display: flex;
   align-items: center;
@@ -200,6 +184,7 @@ img {
 @media screen and (min-width: 1200px) {
   .page-header__contact-list {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -396,6 +381,22 @@ img {
 }
 
 .page-header__navigation-link:hover, .page-header__navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.page-header__navigation-link--active {
+  position: relative;
+}
+
+.page-header__navigation-link--active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
   color: var(--accent-color);
 }
 
