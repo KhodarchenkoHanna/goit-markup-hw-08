@@ -6,9 +6,16 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .page-header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -18,10 +25,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  // @media screen and (max-width: 767px) {
-  //   justify-content: space-between;
-  // }
 }
 
 .page-header__navigation {
@@ -29,9 +32,16 @@
   align-items: center;
 }
 
-.page-header__navigation-list {
-  display: flex;
-  justify-self: center;
+.page-header__navigation-item:first-child {
+  margin-left: 88px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.page-header__navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 // BURGER-MENU with content
@@ -186,6 +196,7 @@
 // BURGER MENU + content END
 
 .page-header__navigation-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -204,6 +215,16 @@
   }
 }
 
+.page-header__contact-item:first-child {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
 .mail-link,
 .tel-link {
   font-weight: 500;
@@ -215,11 +236,13 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
 }
 
 .mail-icon,
@@ -227,10 +250,6 @@
   margin-right: 8px;
   cursor: pointer;
   fill: currentColor;
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 10px;
-  }
 }
 
 .mail-icon {
@@ -240,6 +259,7 @@
   @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
+    margin-right: 10px;
   }
 }
 
@@ -252,6 +272,7 @@
     height: 16px;
   }
 }
+
 // .page-header {
 //   display: flex;
 //   align-items: center;

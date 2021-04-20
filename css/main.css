@@ -124,6 +124,22 @@ img {
   color: var(--accent-color);
 }
 
+.page-header .page-logo {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header .page-logo {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header .page-logo {
+    margin-bottom: 25px;
+  }
+}
+
 .social-list {
   display: flex;
   align-items: center;
@@ -181,6 +197,17 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .page-header__contact-list {
+    display: flex;
+  }
+}
+
+.page-header__navigation-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .page-header__navigation-list {
     display: none;
@@ -198,9 +225,18 @@ img {
   align-items: center;
 }
 
-.page-header__navigation-list {
-  display: flex;
-  justify-self: center;
+.page-header__navigation-item:first-child {
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__navigation-item:first-child {
+    margin-left: 93px;
+  }
+}
+
+.page-header__navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .page-header__burger-menu {
@@ -347,6 +383,7 @@ img {
 }
 
 .page-header__navigation-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -362,6 +399,18 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-header__contact-item:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__contact-item:first-child {
+    margin-right: 30px;
+  }
+}
+
 .mail-link,
 .tel-link {
   font-weight: 500;
@@ -374,7 +423,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-link:hover, .mail-link:focus,
+.mail-link:hover,
+.mail-link:focus,
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
@@ -387,13 +437,6 @@ img {
   fill: currentColor;
 }
 
-@media screen and (min-width: 1200px) {
-  .mail-icon,
-  .tel-icon {
-    margin-right: 10px;
-  }
-}
-
 .mail-icon {
   width: 14px;
   height: 10px;
@@ -403,6 +446,7 @@ img {
   .mail-icon {
     width: 16px;
     height: 12px;
+    margin-right: 10px;
   }
 }
 

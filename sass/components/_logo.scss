@@ -17,6 +17,18 @@
   color: var(--accent-color);
 }
 
+.page-header .page-logo {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 25px;
+  }
+}
+
 // .page-logo--footer {
 //   display: block;
 //   margin-right: 0;
