@@ -783,11 +783,13 @@ img {
   border: none;
 }
 
-.about__advantages-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -844,8 +846,16 @@ img {
   color: var(--second-text-color);
 }
 
-.about--for-skills {
-  padding-top: 0px;
+@media screen and (max-width: 1199px) {
+  .about--for-skills {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about--for-skills {
+    padding-top: 0px;
+  }
 }
 
 .about__skills-list {
@@ -886,20 +896,41 @@ img {
   background-color: var(--light-background-color);
 }
 
-.about__team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+@media screen and (min-width: 768px) {
+  .about__team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 
 .about__team-list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--third-text-color);
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__team-list-item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__team-list-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .about__team-member-description {
@@ -922,6 +953,18 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .about--team .social-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about--team .social-list {
+    justify-content: space-between;
+  }
 }
 
 .about__customers-list {
