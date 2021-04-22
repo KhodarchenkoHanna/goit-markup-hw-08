@@ -12,6 +12,7 @@
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -34,6 +35,7 @@
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -54,6 +56,7 @@
 
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px) and (min-resolution: 2dppx) {
     background-image: linear-gradient(
@@ -119,8 +122,11 @@
   transform-origin: center left;
 
   display: flex;
-  min-width: 450px;
-  min-height: 609px;
+  max-width: 450px;
+  max-height: 609px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
   padding: 40px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -142,7 +148,7 @@
 }
 
 .modal-form__title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   text-align: center;
   font-weight: 700;
   font-size: 20px;
