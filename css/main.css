@@ -105,11 +105,18 @@ img {
 
 .about__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .page-logo {
@@ -790,7 +797,7 @@ img {
   border: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .about__advantages-list {
     display: flex;
     flex-wrap: wrap;
@@ -987,7 +994,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc((100% - 180px) / 6);
   margin-left: 30px;
   margin-top: 30px;
   border-radius: 4px;
@@ -1000,6 +1006,24 @@ img {
 .about__customers-list-item:hover, .about__customers-list-item:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .about__customers-list-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about__customers-list-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__customers-list-item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }
 
 .about__customer-icon {
