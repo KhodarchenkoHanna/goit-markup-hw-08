@@ -1319,6 +1319,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .filter-btns-list {
+    text-align: center;
+    justify-content: center;
     margin-bottom: 30px;
   }
 }
