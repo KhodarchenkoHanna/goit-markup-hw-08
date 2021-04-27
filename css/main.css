@@ -1392,6 +1392,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__card--height-fix {
+    height: 146px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .project-list__item:not(:last-child) {
     margin-bottom: 30px;

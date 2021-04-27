@@ -82,6 +82,12 @@
   }
 }
 
+.project-list__card--height-fix {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    height: 146px;
+  }
+}
+
 .project-list__item:not(:last-child) {
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
