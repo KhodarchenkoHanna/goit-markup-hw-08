@@ -185,6 +185,10 @@
   color: var(--third-text-color);
   background-color: var(--dark-background-color);
 
+  @media screen and (max-width: 479px) {
+    min-width: 100%;
+  }
+
   @media screen and (max-width: 1199px) {
     margin-bottom: 20px;
   }
