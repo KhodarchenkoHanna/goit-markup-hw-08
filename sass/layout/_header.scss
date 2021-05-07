@@ -55,6 +55,7 @@
 .page-header__burger-menu {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   padding: 0;
 
   @media screen and (min-width: 768px) {
@@ -283,6 +284,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .mail-link:hover,
